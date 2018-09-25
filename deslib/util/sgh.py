@@ -95,7 +95,7 @@ def _build_Perceptron(X,y,curr_training_samples,centroids):
     diff_vec = centroids[idx_class_1,] - centroids[idx_class_2,]       
 
     if not np.any(diff_vec):
-        print('Equal classes centroids!')
+        #print('Equal classes centroids!')
         w_p = 0.01 * np.ones((n_features),float)
         w_p = w_p/sqrt(((w_p)**(2)).sum()) 
     else:
